@@ -1,0 +1,50 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'outfit';
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--LightGray);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr_card {
+    width: 300px;
+    border-radius: 20px;
+    background-color: var(--White);
+    padding: 1em;
+}
+.card__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.card__title {
+    color: var(--DarkBlue);
+    text-align: center;
+    font-size: 1.3em;
+}
+.card__text {
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+
